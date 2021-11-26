@@ -74,7 +74,7 @@ He hecho uso de las siguientes bibliotecas:
 
 * [rustc-hash](https://crates.io/crates/rustc-hash): El algoritmo de hashing de la biblioteca estándar de Rust está pensado para ser criptográficamente seguro, debido a esto funciona relativamente lento con números enteros. En el algoritmo genético básico esto termina causando un cuello de botella. Esta biblioteca provee un algoritmo de hashing no seguro pero que funciona bastante mas rápido además de una tabla hash y un hashset que hacen uso de él. Usando esta última estructura de datos la velocidad del algoritmo genético estándar mejora en casi un 40%.
 
-* [derive_builder](https://crates.io/crates/derive_builder): Dado que mi algoritmo genético admite diez parámetros, he optado por utilizar el patron builder para hacer mas claro el código. Esta librería implementa automáticamente el patrón builder, eliminado así bastante boilerplate.
+* [derive_builder](https://crates.io/crates/derive_builder): Dado que mi algoritmo genético admite diez parámetros, he optado por utilizar el patron builder para hacer mas claro el código. Esta librería implementa automáticamente el patrón builder para un struct, eliminado así bastante boilerplate.
 
   
 
