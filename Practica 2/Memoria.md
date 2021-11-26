@@ -84,7 +84,7 @@ He hecho uso de las siguientes bibliotecas:
 
 Observando el archivo `tai256c.dat` me di cuenta de dos particularidades que tenía. La primera fue que la segunda matriz es simétrica, por tanto es posible ahorrarse la mitad de los cálculos. 
 
-La segunda fue que la primera matriz solo contiene unos y ceros, y que los unos están agrupados en una submatriz de 92 x 92 en la esquina superior izquierda. Por tanto todo calculo que se salga de esta submatriz terminará siendo cero, y está dentro de ella se quedará igual porque se multiplica por uno. Debido a esto la multiplicación por los valores de la primera matriz no es necesaria, solo basta con recorrer los primeros 92 valores de la permutación que se está evaluando.
+La segunda fue que la primera matriz solo contiene unos y ceros, y que los unos están agrupados en una submatriz de 92 x 92 en la esquina superior izquierda. Por tanto todo calculo que se salga de esta submatriz terminará siendo cero, y todo calculo dentro de ella se quedará igual porque se multiplica por uno. Debido a esto la multiplicación por los valores de la primera matriz no es necesaria, solo basta con recorrer los primeros 92 valores de la permutación que se está evaluando.
 
 Gracias a estas optimizaciones el cálculo del coste de una permutación pasa de necesitar 131072 operaciones a solo 4186.
 
